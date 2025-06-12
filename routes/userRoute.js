@@ -8,6 +8,9 @@ import {
 import { verifyToken, authorizeRoles } from "../middleware/authMiddleware.js"; // ✅ Tambah ini
 
 const router = express.Router();
+router.get("/", (req, res) => {
+  res.json({ message: "API AYAM POTONG BERJALAN!" });
+});
 
 // ✅ Semua route hanya untuk admin
 router.get("/user", verifyToken, authorizeRoles("admin"), getUser);
