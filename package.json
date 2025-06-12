@@ -2,11 +2,11 @@
   "name": "webta",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
-
+  "main": "index.cjs",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon app.js",
-    "start": "node app.js"
+    "dev": "nodemon index.cjs",
+    "start": "node index.cjs"
   },
   "author": "adil",
   "license": "ISC",
